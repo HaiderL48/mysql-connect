@@ -1,0 +1,30 @@
+.container{
+    margin: 0 160px;
+  }
+  /* .me-auto ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  
+  } */
+  .bg-body{
+      background-color: #F1F2F4 !important;
+  }
+  
+  .me-auto ul li::after {
+    position: relative;
+    top: -2px;
+    display: block;
+    content: '';
+    border-bottom: solid 2px #0a58ca;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+  }
+  .me-auto .active{
+  border-bottom: #0a58ca 3px solid;
+  color: #0a58ca;
+  }
+  .me-auto ul li:hover::after {
+    transform: scaleX(1);
+  }
+    
