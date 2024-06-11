@@ -34,9 +34,8 @@ app.post("/login", (req, res) => {
 });
 
 app.use(express.json());
-const port = 5000;
-app.listen(port, () => {
-  console.log(`app is listning on server port ${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`app is listning on server port ${process.env.PORT}`);
 });
 app.get("/", (req, res) => {
   res.send("hello");
