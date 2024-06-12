@@ -1,5 +1,6 @@
 .container{
-    margin: 0 160px;
+   margin: 0;
+   width: 100%;
   }
   /* .me-auto ul{
     display: flex;
